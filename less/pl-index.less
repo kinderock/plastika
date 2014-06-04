@@ -27,5 +27,22 @@
 		position: absolute;
 		top: 50px;
 		left: 10px;
+		z-index: 999999;
 		.size(960px, 710px);
+		ul{
+			list-style: none;
+			.clear();
+			li{
+				float: left;
+				margin-left: 30px;
+				&:nth-child(7n+1){
+					clear: left;
+					margin-left: 30px;
+				}
+			}
+		}
+	}
+	.canvas_item{
+		display: block;
+		cursor: pointer;
 	}
