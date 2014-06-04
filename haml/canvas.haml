@@ -1,0 +1,18 @@
+!!! 5
+%html{:lang => "en"} 
+%head 
+  %meta{:charset => "UTF-8"}/ 
+  %title Главная || Plastica
+
+  %link{:rel => "stylesheet", :href => "/css/importer.css"}/ 
+%body 
+  .pl-content
+    .pl-content_block
+
+      .pl-canvas
+        .pl-canvas__pictlist
+        %canvas#c.pl-canvas__container{border: "0", height: "728", width: "984"}
+
+  %script{src: "/js/vendor/jquery-2.1.1.min.js"}
+  %script{src: "/js/vendor/fabric.js"}
+  %script{src: "/js/plastika.js"}
