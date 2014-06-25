@@ -4,127 +4,136 @@
   %meta{:charset => "UTF-8"}/
   %title Главная || Plastica
 
+  %link{:rel => "stylesheet", :href => "http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css"}/
   %link{:rel => "stylesheet", :href => "/css/importer.css"}/
 %body
   .pl-content
     .pl-content_block
       .pl-canvas
+        .pl-canvas__options
+          .pl-pictlist_link
+          .pl-delete_object_link
+          .pl-layerUp_link +
+          .pl-layerDwn_link -
+
         .pl-canvas__pictlist
-          %ul
-            %li
-              %img#img_1.canvas_item{:src => "/images/figures/1.png", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_2.canvas_item{:src => "/images/figures/2.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_3.canvas_item{:src => "/images/figures/3.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_4.canvas_item{:src => "/images/figures/4.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_5.canvas_item{:src => "/images/figures/5.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_6.canvas_item{:src => "/images/figures/6.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_7.canvas_item{:src => "/images/figures/7.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img{:src => "/images/figures/1.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_2{:src => "/images/figures/2.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_3{:src => "/images/figures/3.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_4{:src => "/images/figures/4.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_5{:src => "/images/figures/5.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_6{:src => "/images/figures/6.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_7{:src => "/images/figures/7.svg", :alt => "", width:"100px", height:"auto"}
 
 
-            %li
-              %img#img_8.canvas_item{:src => "/images/figures/8.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_9.canvas_item{:src => "/images/figures/9.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_10.canvas_item{:src => "/images/figures/10.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_11.canvas_item{:src => "/images/figures/11.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_12.canvas_item{:src => "/images/figures/12.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_13.canvas_item{:src => "/images/figures/13.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_14.canvas_item{:src => "/images/figures/14.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_8{:src => "/images/figures/8.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_9{:src => "/images/figures/9.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_10{:src => "/images/figures/10.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_11{:src => "/images/figures/11.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_12{:src => "/images/figures/12.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_13{:src => "/images/figures/13.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_14{:src => "/images/figures/14.svg", :alt => "", width:"100px", height:"auto"}
 
 
-            %li
-              %img#img_15.canvas_item{:src => "/images/figures/15.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_16.canvas_item{:src => "/images/figures/16.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_17.canvas_item{:src => "/images/figures/17.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_18.canvas_item{:src => "/images/figures/18.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_19.canvas_item{:src => "/images/figures/19.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_20.canvas_item{:src => "/images/figures/20.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_21.canvas_item{:src => "/images/figures/21.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_15{:src => "/images/figures/15.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_16{:src => "/images/figures/16.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_17{:src => "/images/figures/17.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_18{:src => "/images/figures/18.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_19{:src => "/images/figures/19.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_20{:src => "/images/figures/20.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_21{:src => "/images/figures/21.svg", :alt => "", width:"100px", height:"auto"}
 
 
-            %li
-              %img#img_22.canvas_item{:src => "/images/figures/22.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_23.canvas_item{:src => "/images/figures/23.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_24.canvas_item{:src => "/images/figures/24.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_25.canvas_item{:src => "/images/figures/25.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_26.canvas_item{:src => "/images/figures/26.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_27.canvas_item{:src => "/images/figures/27.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_28.canvas_item{:src => "/images/figures/28.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_22{:src => "/images/figures/22.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_23{:src => "/images/figures/23.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_24{:src => "/images/figures/24.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_25{:src => "/images/figures/25.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_26{:src => "/images/figures/26.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_27{:src => "/images/figures/27.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_28{:src => "/images/figures/28.svg", :alt => "", width:"100px", height:"auto"}
 
 
-            %li
-              %img#img_29.canvas_item{:src => "/images/figures/29.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_30.canvas_item{:src => "/images/figures/30.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_31.canvas_item{:src => "/images/figures/31.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_32.canvas_item{:src => "/images/figures/32.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_33.canvas_item{:src => "/images/figures/33.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_34.canvas_item{:src => "/images/figures/34.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_35.canvas_item{:src => "/images/figures/35.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_29{:src => "/images/figures/29.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_30{:src => "/images/figures/30.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_31{:src => "/images/figures/31.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_32{:src => "/images/figures/32.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_33{:src => "/images/figures/33.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_34{:src => "/images/figures/34.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_35{:src => "/images/figures/35.svg", :alt => "", width:"100px", height:"auto"}
 
 
-            %li
-              %img#img_36.canvas_item{:src => "/images/figures/36.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_37.canvas_item{:src => "/images/figures/37.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_38.canvas_item{:src => "/images/figures/38.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_39.canvas_item{:src => "/images/figures/39.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_40.canvas_item{:src => "/images/figures/40.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_41.canvas_item{:src => "/images/figures/41.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_42.canvas_item{:src => "/images/figures/42.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_36{:src => "/images/figures/36.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_37{:src => "/images/figures/37.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_38{:src => "/images/figures/38.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_39{:src => "/images/figures/39.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_40{:src => "/images/figures/40.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_41{:src => "/images/figures/41.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_42{:src => "/images/figures/42.svg", :alt => "", width:"100px", height:"auto"}
 
 
-            %li
-              %img#img_43.canvas_item{:src => "/images/figures/43.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_44.canvas_item{:src => "/images/figures/44.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_45.canvas_item{:src => "/images/figures/45.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_46.canvas_item{:src => "/images/figures/46.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_47.canvas_item{:src => "/images/figures/47.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_48.canvas_item{:src => "/images/figures/48.svg", :alt => "", width:"100px", height:"auto"}
-            %li
-              %img#img_49.canvas_item{:src => "/images/figures/49.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_43{:src => "/images/figures/43.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_44{:src => "/images/figures/44.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_45{:src => "/images/figures/45.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_46{:src => "/images/figures/46.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_47{:src => "/images/figures/47.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_48{:src => "/images/figures/48.svg", :alt => "", width:"100px", height:"auto"}
+          .canvas_item
+            %img#img_49{:src => "/images/figures/49.svg", :alt => "", width:"100px", height:"auto"}
 
 
         %canvas#c.pl-canvas__container{border: "0", height: "728", width: "984"}
 
+        .pl-opacity_slider#slider-vertical
+
   %script{src: "/js/vendor/jquery-2.1.1.min.js"}
+  %script{src: "http://code.jquery.com/ui/1.10.4/jquery-ui.js"}
   %script{src: "/js/vendor/fabric.js"}
   %script{src: "/js/plastika.js"}

@@ -101,28 +101,108 @@ table {
   width: 960px;
   height: 710px;
 }
-.pl-canvas__pictlist ul {
-  list-style: none;
-}
-.pl-canvas__pictlist ul:before,
-.pl-canvas__pictlist ul:after {
+.pl-canvas__pictlist:before,
+.pl-canvas__pictlist:after {
   content: " ";
   display: table;
 }
-.pl-canvas__pictlist ul:after {
+.pl-canvas__pictlist:after {
   clear: both;
 }
-.pl-canvas__pictlist ul li {
-  float: left;
-  margin-left: 30px;
+.pl-pictlist_link {
+  display: block;
+  background: transparent;
+  z-index: 999;
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 6px;
+  left: 168px;
 }
-.pl-canvas__pictlist ul li:nth-child(7n+1) {
-  clear: left;
-  margin-left: 30px;
+.pl-delete_object_link {
+  display: block;
+  background: transparent;
+  z-index: 999;
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 6px;
+  right: 7px;
+}
+.pl-layerUp_link {
+  color: #fff;
+  background: transparent;
+  display: block;
+  z-index: 999;
+  cursor: pointer;
+  text-align: center;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 2px;
+  left: 229px;
+  font-size: 36px;
+  line-height: 32px;
+}
+.pl-layerDwn_link {
+  color: #fff;
+  display: block;
+  z-index: 999;
+  cursor: pointer;
+  text-align: center;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 2px;
+  left: 291px;
+  font-size: 36px;
+  line-height: 32px;
 }
 .canvas_item {
   display: block;
   cursor: pointer;
+  float: left;
+  margin-left: 30px;
+}
+.canvas_item:nth-child(7n+1) {
+  clear: left;
+  margin-left: 30px;
+}
+.pl-opacity_slider {
+  z-index: 999;
+  background: #000;
+  border: none;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  width: 24px;
+  height: 180px;
+  position: absolute;
+  top: 163px;
+  right: 7px;
+}
+.pl-opacity_slider .ui-slider-range {
+  background: #202020;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
+.pl-opacity_slider .ui-slider-handle {
+  background: #4b4b4b;
+  border: none;
+  left: -1px;
+  margin-bottom: -12px;
+  width: 25px;
+  height: 25px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
+.pl-opacity_slider .ui-slider-handle:hover,
+.pl-opacity_slider .ui-slider-handle.ui-state-active {
+  background: #989898;
 }
 .pl-menu img,
 .pl-menu a {
